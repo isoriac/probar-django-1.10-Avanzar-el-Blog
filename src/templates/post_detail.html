@@ -34,7 +34,8 @@
 <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
 
 <br><br><hr/>
-<div class='content-markdown'>{{ instance.contenido }}</div><br><br><br>
+<div class='post-detail-art'>{{ instance.get_markdown}}</div>
+<br><br><br>
 
 <div class="fb-comments" data-href="{{ request.build_absolute_uri }}" data-numposts="5"></div>
 <br/>

@@ -15,7 +15,7 @@
             {% if obj.imagen %}
             <img src='{{ obj.imagen.url }}' class='img-responsive' />
             {% endif %}
-    <div class="caption">
+    <div class="caption post-detail-art">
         {% if obj.draft %}
             <h3>DRAFT</h3>
         {% endif %} 
@@ -29,7 +29,7 @@
             <p>Autor: {{ obj.user }}</p>
         {% endif %}
 
-        <p class='content-markdown'>{{ obj.contenido|truncatechars:120 }}</p>
+        <p class=''>{{ obj.get_markdown }}</p>
         <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Ver</a> </p>
     </div>
         </div>
