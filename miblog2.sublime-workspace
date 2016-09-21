@@ -275,22 +275,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/templates/post_detail.html",
-			"settings":
-			{
-				"buffer_size": 1451,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/templates/base.html",
-			"settings":
-			{
-				"buffer_size": 2448,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -316,13 +300,18 @@
 	},
 	"file_history":
 	[
+		"/C/Users/karli/Desktop/miblog2/src/posts/forms.py",
+		"/C/Users/karli/Desktop/miblog2/src/templates/post_form.html",
+		"/C/Users/karli/Desktop/miblog2/src/templates/base.html",
+		"/C/Users/karli/Desktop/miblog2/src/templates/post_list.html",
+		"/C/Users/karli/Desktop/miblog2/src/posts/models.py",
+		"/C/Users/karli/Desktop/miblog2/src/templates/post_detail.html",
+		"/C/Users/karli/Desktop/miblog2/src/miblog2/settings.py",
+		"/C/Users/karli/Desktop/miblog2/README.md",
 		"/C/Users/karli/Desktop/miblog2/src/miblog2/urls.py",
 		"/C/Users/karli/Desktop/miblog2/src/posts/urls.py",
 		"/C/Users/karli/Desktop/miblog2/src/posts/views.py",
-		"/C/Users/karli/Desktop/miblog2/src/templates/base.html",
-		"/C/Users/karli/Desktop/miblog2/src/templates/post_detail.html",
 		"/C/Users/karli/Desktop/miblog2/src/manage.py",
-		"/C/Users/karli/Desktop/miblog2/src/miblog2/settings.py",
 		"/C/Users/karli/Desktop/miblog2/src/miblog2/wsgi.py",
 		"/C/Users/karli/Desktop/test/src/manage.py",
 		"/C/Users/karli/Desktop/test/src/miblog/settings.py",
@@ -438,12 +427,7 @@
 		"/C/Users/Karlita/Desktop/cbvs/src/plantillas/update.html",
 		"/C/Users/Karlita/Desktop/cbvs/src/plantillas/list.html",
 		"/C/Users/Karlita/Desktop/cbvs/src/myapp/__init__.py",
-		"/C/Users/Karlita/Desktop/cbvs/src/cbvs/__init__.py",
-		"/C/Users/Karlita/Desktop/cbvs/Scripts/django-admin.py",
-		"/C/Users/Karlita/Desktop/cbvs.py",
-		"/C/Users/Karlita/Desktop/testcbv/src/testcbv/urls.py",
-		"/C/Users/Karlita/Desktop/detail_view_master.py",
-		"/C/Users/Karlita/Desktop/formhtml.py"
+		"/C/Users/Karlita/Desktop/cbvs/src/cbvs/__init__.py"
 	],
 	"find":
 	{
@@ -494,64 +478,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/templates/post_detail.html",
-					"settings":
-					{
-						"buffer_size": 1451,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1128,
-								1128
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 396.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/templates/base.html",
-					"settings":
-					{
-						"buffer_size": 2448,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2410,
-								2410
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 924.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
