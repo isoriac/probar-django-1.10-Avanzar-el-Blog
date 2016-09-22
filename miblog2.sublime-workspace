@@ -300,13 +300,14 @@
 	},
 	"file_history":
 	[
-		"/C/Users/karli/Desktop/miblog2/src/posts/forms.py",
-		"/C/Users/karli/Desktop/miblog2/src/templates/post_form.html",
-		"/C/Users/karli/Desktop/miblog2/src/templates/base.html",
 		"/C/Users/karli/Desktop/miblog2/src/templates/post_list.html",
 		"/C/Users/karli/Desktop/miblog2/src/posts/models.py",
-		"/C/Users/karli/Desktop/miblog2/src/templates/post_detail.html",
+		"/C/Users/karli/Desktop/miblog2/src/templates/post_form.html",
 		"/C/Users/karli/Desktop/miblog2/src/miblog2/settings.py",
+		"/C/Users/karli/Desktop/miblog2/src/templates/base.html",
+		"/C/Users/karli/Desktop/miblog2/src/static/css/base.css",
+		"/C/Users/karli/Desktop/miblog2/src/posts/forms.py",
+		"/C/Users/karli/Desktop/miblog2/src/templates/post_detail.html",
 		"/C/Users/karli/Desktop/miblog2/README.md",
 		"/C/Users/karli/Desktop/miblog2/src/miblog2/urls.py",
 		"/C/Users/karli/Desktop/miblog2/src/posts/urls.py",
@@ -426,8 +427,7 @@
 		"/C/Users/Karlita/Desktop/cbvs/src/plantillas/delete.html",
 		"/C/Users/Karlita/Desktop/cbvs/src/plantillas/update.html",
 		"/C/Users/Karlita/Desktop/cbvs/src/plantillas/list.html",
-		"/C/Users/Karlita/Desktop/cbvs/src/myapp/__init__.py",
-		"/C/Users/Karlita/Desktop/cbvs/src/cbvs/__init__.py"
+		"/C/Users/Karlita/Desktop/cbvs/src/myapp/__init__.py"
 	],
 	"find":
 	{
