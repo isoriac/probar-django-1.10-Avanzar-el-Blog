@@ -9,6 +9,7 @@ except:
     pass
 
 from django.contrib import messages
+
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from django.http import HttpResponse, HttpResponseRedirect, Http404
@@ -17,6 +18,8 @@ from django.utils import timezone
 
 from .forms import PostForm
 from .models import Post
+
+from comments.models import Comment 
 
 # Create your views here.
 def post_create(request):
@@ -47,6 +50,7 @@ def post_detail(request, slug=None):
 		"share_string": share_string,
 	}
 	return render(request, "post_detail.html", context)
+
 
 def post_list(request):
 	hoy = timezone.now().date()
