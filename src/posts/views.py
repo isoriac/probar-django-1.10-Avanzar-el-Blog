@@ -9,6 +9,7 @@ except:
     pass
 
 from django.contrib import messages
+from django.contrib.contenttypes.models import ContentType
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from django.http import HttpResponse, HttpResponseRedirect, Http404
@@ -19,6 +20,7 @@ from .forms import PostForm
 from .models import Post
 
 from comments.models import Comment 
+from comments.forms import CommentForm
 
 # Create your views here.
 def post_create(request):
@@ -43,6 +45,27 @@ def post_detail(request, slug=None):
 		if not request.user.is_staff or not request.user.is_superuser:
 			raise Http404
 	share_string = quote_plus(instance.titulo)
+
+	initial_data = {
+		"content_type": instance.get_content_type,
+		"object_id": instance.id,
+	}
+	form = CommentForm(request.POST or None, initial=initial_data)
+	if form.is_valid():
+		c_type = form.cleaned_data.get("content_type")
+		content_type = ContentType.objects.get(model=c_type)
+		obj_id = form.cleaned_data.get("object_id")
+		content_data = form.cleaned_data.get("content")
+
+		new_comment, created = Comment.objects.get_or_create(
+								user=request.user,
+								content_type=content_type,
+								object_id=obj_id,
+								content=content_data,
+								)
+		if created:
+			print("yuju!!! funciona!!!")
+
 	#Post.objects.get(id=instance.id)
 	comments = instance.comments #Comment.objects.filter_by_instance(instance)
 	context = {
@@ -50,6 +73,7 @@ def post_detail(request, slug=None):
 		"instance": instance,
 		"share_string": share_string,
 		"comments": comments,
+		"comment_form": form,
 	}
 	return render(request, "post_detail.html", context)
 
