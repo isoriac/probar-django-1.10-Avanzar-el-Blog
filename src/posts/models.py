@@ -58,6 +58,12 @@ class Post(models.Model):
 		markdown_text = markdown(contenido)
 		return mark_safe(markdown_text)
 
+	@property
+	def comments(self):
+		instance = self
+		qs = Comment.objects.filter_by_instance(instance)
+		return qs
+
 def create_slug(instance, new_slug=None):
 	slug = slugify(instance.titulo)
 	if new_slug is not None:

@@ -34,18 +34,18 @@
 <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
 
 <br><br><hr/>
-<div class='post-detail-art'>{{ instance.get_markdown}}</div>
-<br/>
+<div class='post-detail-art'>{{ instance.get_markdown }}</div>
+<br/><hr/>
 
 <div>
 <p class='lead'>Comentarios</p>
+
 {% for comment in comments %}
-<div class=''>
-{{ comment.content }}
-<br/>
-<small>por {{ comment.user }} | hace {{ comment.timestamp|timesince }}</small>
-<hr/>
-</div>
+<blockquote>
+  <p>{{ comment.content }}</p>
+  <footer>por {{ comment.user }} | hace {{ comment.timestamp|timesince }}</footer>
+</blockquote>
+<hr/> 		
 {% endfor %}
 </div>
 

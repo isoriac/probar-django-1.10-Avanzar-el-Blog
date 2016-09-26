@@ -44,7 +44,7 @@ def post_detail(request, slug=None):
 			raise Http404
 	share_string = quote_plus(instance.titulo)
 	#Post.objects.get(id=instance.id)
-	comments = Comment.objects.filter_by_instance(instance)
+	comments = instance.comments #Comment.objects.filter_by_instance(instance)
 	context = {
 		"titulo": instance.titulo,
 		"instance": instance,

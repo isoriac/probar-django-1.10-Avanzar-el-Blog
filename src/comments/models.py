@@ -5,8 +5,6 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.db import models
 
-# from posts.models import Post
-
 # Create your models here.
 class CommentManager(models.Manager):
 	def filter_by_instance(self, instance):
