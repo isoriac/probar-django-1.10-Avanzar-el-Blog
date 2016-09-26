@@ -9,6 +9,8 @@ from django.utils.text import slugify
 
 from markdown_deux import markdown
 
+from comments.models import Comment
+
 # Create your models here.
 
 #Post.objects.all()
