@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Htt",
+				"HttpResponseRedirect"
+			],
+			[
 				"initi",
 				"initial_data"
 			],
@@ -118,10 +122,6 @@
 			[
 				"max",
 				"max_length"
-			],
-			[
-				"Htt",
-				"HttpResponse"
 			],
 			[
 				"File",
@@ -279,6 +279,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/comments/models.py",
+			"settings":
+			{
+				"buffer_size": 1446,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/posts/views.py",
+			"settings":
+			{
+				"buffer_size": 4701,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/templates/post_detail.html",
+			"settings":
+			{
+				"buffer_size": 2323,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/comments/forms.py",
+			"settings":
+			{
+				"buffer_size": 313,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -483,8 +515,116 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/comments/models.py",
+					"settings":
+					{
+						"buffer_size": 1446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								617,
+								617
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 528.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/posts/views.py",
+					"settings":
+					{
+						"buffer_size": 4701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2196,
+								2196
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1056.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/templates/post_detail.html",
+					"settings":
+					{
+						"buffer_size": 2323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1956,
+								1956
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 924.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/comments/forms.py",
+					"settings":
+					{
+						"buffer_size": 313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								251,
+								251
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

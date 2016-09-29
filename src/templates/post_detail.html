@@ -51,6 +51,21 @@
 <blockquote>
   <p>{{ comment.content }}</p>
   <footer>por {{ comment.user }} | hace {{ comment.timestamp|timesince }}</footer>
+
+  	{% for child_comment in comment.children %}
+	<blockquote>
+	<p>{{ child_comment.content }}</p>
+	<footer>por {{ child_comment.user }} | hace {{ child_comment.timestamp|timesince }}</footer>
+</blockquote>
+	{% endfor %}
+
+<form method="POST" action='.'>{% csrf_token %}
+	{{ comment_form|crispy }}
+<input type='hidden' name='parent_id' value='{{ comment.id }}'>
+<input type='submit' value='Responder' class='btn btn-default' />
+</form>
+
+
 </blockquote>
 <hr/> 		
 {% endfor %}
