@@ -1,5 +1,6 @@
-<!-- DOCTYPE html -->
 {% load staticfiles %}
+<!-- DOCTYPE html -->
+
 <html>
 <head>
 <title>{% block head_title %}Avanzar Probar Django 1.10{% endblock head_title %}</title>
@@ -8,16 +9,18 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link rel='stylesheet' href='{% static "css/base.css" %}' />
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel='stylesheet' href='{% static "css/base.css" %}' />
 
 <style>
 {% block style %}{% endblock %}
 </style>
 
 {% block head_extra %}{% endblock head_extra %}
-
 </head>
+
 <body>
 	<div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -38,8 +41,7 @@
 
 {% include "messages_display.html" %}
 <div class='container'>
-{% block content %}
-{% endblock %}
+{% block content %}{% endblock %}
 </div>
 
 <!-- Latest compiled and minified JavaScript -->
@@ -52,49 +54,53 @@
 <script type="text/javascript">
 
 $(document).ready(function(){
+
   $(".content-markdown").each(function(){
     var content = $(this).text()
     var markedContent = marked(content)
     $(this).html(markedContent)
   })
+
   $(".post-detail-art img").each(function(){
     $(this).addClass("img-responsive")
   })
-})
 
-// preview-title
-// preview-content
+  var contentInput = $("#id_contenido");
 
-var contentInput = $("#id_contenido");
+ function setContent(value){
+    if (value){
+      var markedContent = marked(value)
+      $('#preview-content').html(markedContent)
+      $('#preview-content img').each(function(){
+      $(this).addClass("img-responsive")
+      })
+    }
+  }
+  setContent(contentInput.val())
 
-function setContent(value){
-  var markedContent = marked(value)
-  $('#preview-content').html(markedContent)
-  $('#preview-content img').each(function(){
-    $(this).addClass("img-responsive")
+  contentInput.keyup(function(){
+    var newContent = $(this).val()
+    setContent(newContent)
   })
-}
-setContent(contentInput.val())
 
-contentInput.keyup(function(){
-  var newContent = $(this).val()
-  setContent(newContent)
+  var titleInput = $("#id_titulo");
+
+  function setTitle(value){
+    $('#preview-title').text(value)
+  }
+  setTitle(titleInput.val())
+
+  titleInput.keyup(function(){
+    var newContent = $(this).val()
+    setTitle(newContent)
+  })
+
+  $(".comment-reply-btn").click(function(event){
+    event.preventDefault();
+    $(this).parent().next(".comment-reply").fadeToggle();
+  })
+
 })
-
-var titleInput = $("#id_titulo");
-
-
-function setTitle(value){
-  $('#preview-title').text(value)
-}
-setTitle(titleInput.val())
-
-titleInput.keyup(function(){
-  var newContent = $(this).val()
-  setTitle(newContent)
-})
-
-
 </script>
 
 </body>	

@@ -9,7 +9,7 @@
     <div class='input-group'>
 <input class='form-control' type='text' name='q' placeholder='buscar posts' value='{{ request.GET.q }}' />
     <span class='input-group-btn'>
-        <button class='btn btn-default' type='submit'>Buscar <i class="fa fa-search" aria-hidden="true"></i></button>
+        <button class='btn btn-default' type='submit'>Buscar <i class="fa fa-search"></i></button>
 <!-- <input class='btn btn-default' type='submit' value='Buscar' /> -->
     </span>
     </div>
@@ -37,7 +37,7 @@
             <p>Autor: {{ obj.user }}</p>
         {% endif %}
 
-        <p class=''>{{ obj.get_markdown|truncatewords_html:10 }}</p>
+        {{ obj.get_markdown|truncatewords_html:10 }}
         <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Ver</a> </p>
     </div>
         </div>

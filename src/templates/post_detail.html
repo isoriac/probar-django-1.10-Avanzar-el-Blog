@@ -2,7 +2,9 @@
 {% load urlify %}
 {% load crispy_forms_tags %}
 
-{% block head_title %}{{ instance.titulo }} | {{ block.super }}{% endblock head_title %}
+{% block head_title %}
+{{ instance.titulo }} | {{ block.super }}
+{% endblock head_title %}
 
 <style>
 	{% block style %}
@@ -34,7 +36,10 @@
 <a href="https://twitter.com/home?status={{ instance.titulo|urlify }} {{ request.build_absolute_uri }}">
 <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
 
-<br><br><hr/>
+<br/><br/><hr/>
+
+<div class='row'>
+<div class='col-sm-12'>
 <div class='post-detail-art'>{{ instance.get_markdown }}</div>
 <br/><hr/>
 
@@ -43,40 +48,40 @@
 
 <form method="POST" action='.'>{% csrf_token %}
 	{{ comment_form|crispy }}
-<input type='submit' value='Publicar' class='btn btn-default' />
+	<input type='submit' value='Publicar' class='btn btn-default' />
 </form>
 
 <br/>
+
 {% for comment in comments %}
 <blockquote>
-  <p>{{ comment.content }}</p>
-  <footer>por {{ comment.user }} | hace {{ comment.timestamp|timesince }}</footer>
+	<p>{{ comment.content }}</p>
+	<footer>por {{ comment.user }} | hace {{ comment.timestamp|timesince }} | {% if comment.children.count > 0 %}{{ comment.children.count }} Comment{% if comment.children.count > 1 %}s{% endif %} | {% endif %}<a class='comment-reply-btn' href='#'>Responder</a></footer>
+	<div class='comment-reply'>
+	  	{% for child_comment in comment.children %}
+		<blockquote>
+			<p>{{ child_comment.content }}</p>
+			<footer>por {{ child_comment.user }} | hace {{ child_comment.timestamp|timesince }}</footer>
+		</blockquote>
+		{% endfor %}
 
-  	{% for child_comment in comment.children %}
-	<blockquote>
-	<p>{{ child_comment.content }}</p>
-	<footer>por {{ child_comment.user }} | hace {{ child_comment.timestamp|timesince }}</footer>
-</blockquote>
-	{% endfor %}
-
-<form method="POST" action='.'>{% csrf_token %}
-	{{ comment_form|crispy }}
-<input type='hidden' name='parent_id' value='{{ comment.id }}'>
-<input type='submit' value='Responder' class='btn btn-default' />
-</form>
-
-
+		<form method="POST" action='.'>{% csrf_token %}
+			{{ comment_form|crispy }}
+			<input type='hidden' name='parent_id' value='{{ comment.id }}'/>
+			<input type='submit' value='Responder' class='btn btn-default' />
+		</form>
+	</div>
 </blockquote>
 <hr/> 		
 {% endfor %}
 </div>
 
 
-
 <!-- <div class="fb-comments" data-href="{{ request.build_absolute_uri }}" data-numposts="5"></div> -->
 <br/>
 <div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
 <br><br>
+</div>
 </div>
 {% endblock %}
 

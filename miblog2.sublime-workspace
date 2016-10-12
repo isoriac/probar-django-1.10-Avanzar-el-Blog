@@ -280,18 +280,10 @@
 	"buffers":
 	[
 		{
-			"file": "src/comments/models.py",
+			"file": "src/templates/base.html",
 			"settings":
 			{
-				"buffer_size": 1446,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/posts/views.py",
-			"settings":
-			{
-				"buffer_size": 4701,
+				"buffer_size": 3322,
 				"line_ending": "Windows"
 			}
 		},
@@ -299,15 +291,31 @@
 			"file": "src/templates/post_detail.html",
 			"settings":
 			{
-				"buffer_size": 2323,
+				"buffer_size": 2618,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/comments/forms.py",
+			"file": "src/templates/post_form.html",
 			"settings":
 			{
-				"buffer_size": 313,
+				"buffer_size": 532,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/templates/post_list.html",
+			"settings":
+			{
+				"buffer_size": 2132,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/posts/models.py",
+			"settings":
+			{
+				"buffer_size": 2657,
 				"line_ending": "Windows"
 			}
 		}
@@ -336,21 +344,22 @@
 	},
 	"file_history":
 	[
-		"/C/Users/karli/Desktop/miblog2/src/posts/models.py",
-		"/C/Users/karli/Desktop/miblog2/src/comments/forms.py",
-		"/C/Users/karli/Desktop/miblog2/src/templates/post_detail.html",
-		"/C/Users/karli/Desktop/miblog2/src/posts/views.py",
+		"/C/Users/karli/Desktop/miblog2/src/static/css/base.css",
 		"/C/Users/karli/Desktop/miblog2/src/comments/models.py",
-		"/C/Users/karli/Desktop/miblog2/src/db.sqlite3",
+		"/C/Users/karli/Desktop/miblog2/src/posts/views.py",
+		"/C/Users/karli/Desktop/miblog2/src/posts/models.py",
+		"/C/Users/karli/Desktop/miblog2/src/templates/messages_display.html",
+		"/C/Users/karli/Desktop/miblog2/src/templates/base.html",
 		"/C/Users/karli/Desktop/miblog2/src/miblog2/settings.py",
+		"/C/Users/karli/Desktop/miblog2/src/miblog2/urls.py",
+		"/C/Users/karli/Desktop/miblog2/src/templates/post_detail.html",
+		"/C/Users/karli/Desktop/miblog2/src/comments/forms.py",
+		"/C/Users/karli/Desktop/miblog2/src/db.sqlite3",
 		"/C/Users/karli/Desktop/miblog2/src/comments/admin.py",
 		"/C/Users/karli/Desktop/miblog2/src/templates/post_list.html",
 		"/C/Users/karli/Desktop/miblog2/src/templates/post_form.html",
-		"/C/Users/karli/Desktop/miblog2/src/templates/base.html",
-		"/C/Users/karli/Desktop/miblog2/src/static/css/base.css",
 		"/C/Users/karli/Desktop/miblog2/src/posts/forms.py",
 		"/C/Users/karli/Desktop/miblog2/README.md",
-		"/C/Users/karli/Desktop/miblog2/src/miblog2/urls.py",
 		"/C/Users/karli/Desktop/miblog2/src/posts/urls.py",
 		"/C/Users/karli/Desktop/miblog2/src/manage.py",
 		"/C/Users/karli/Desktop/miblog2/src/miblog2/wsgi.py",
@@ -462,8 +471,7 @@
 		"/C/Users/Karlita/Desktop/cbvs/src/myapp/admin.py",
 		"/C/Users/Karlita/Desktop/cbvs/src/db.sqlite3",
 		"/C/Users/Karlita/Desktop/cbvs/src/myapp/migrations/0003_auto_20160516_1548.py",
-		"/C/Users/Karlita/Desktop/cbvs/src/myapp/apps.py",
-		"/C/Users/Karlita/Desktop/cbvs/src/myapp/tests.py"
+		"/C/Users/Karlita/Desktop/cbvs/src/myapp/apps.py"
 	],
 	"find":
 	{
@@ -484,6 +492,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\"></",
+			"replace",
+			".content-markdown",
+			"marked",
 			"instance",
 			"miblog",
 			"entre",
@@ -497,7 +509,7 @@
 			"value",
 			"/>"
 		],
-		"highlight": true,
+		"highlight": false,
 		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
@@ -515,50 +527,136 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/comments/models.py",
+					"file": "src/templates/base.html",
 					"settings":
 					{
-						"buffer_size": 1446,
+						"buffer_size": 3322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								617,
-								617
+								2794,
+								2794
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 528.0,
+						"translation.y": 1342.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/posts/views.py",
+					"file": "src/templates/post_detail.html",
 					"settings":
 					{
-						"buffer_size": 4701,
+						"buffer_size": 2618,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2196,
-								2196
+								1156,
+								1156
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 836.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/templates/post_form.html",
+					"settings":
+					{
+						"buffer_size": 532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								531,
+								531
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 66.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/templates/post_list.html",
+					"settings":
+					{
+						"buffer_size": 2132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1491,
+								1491
+							],
+							[
+								1504,
+								1504
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1034.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/posts/models.py",
+					"settings":
+					{
+						"buffer_size": 2657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -568,59 +666,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 1056.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/templates/post_detail.html",
-					"settings":
-					{
-						"buffer_size": 2323,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1956,
-								1956
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 924.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/comments/forms.py",
-					"settings":
-					{
-						"buffer_size": 313,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								251,
-								251
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -692,6 +737,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 202.0,
+	"side_bar_width": 186.0,
 	"status_bar_visible": true
 }
