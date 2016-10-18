@@ -16,12 +16,14 @@ from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 
-from .forms import PostForm
+
 from .models import Post
+from .forms import PostForm
 from .utils import get_read_time
 
 from comments.models import Comment 
 from comments.forms import CommentForm
+from .utils import get_read_time
 
 # Create your views here.
 def post_create(request):
@@ -46,7 +48,7 @@ def post_detail(request, slug=None):
 		if not request.user.is_staff or not request.user.is_superuser:
 			raise Http404
 	share_string = quote_plus(instance.titulo)
-
+	print(get_read_time(instance.get_markdown()))
 	initial_data = {
 		"content_type": instance.get_content_type,
 		"object_id": instance.id,

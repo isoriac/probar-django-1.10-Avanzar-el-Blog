@@ -5,7 +5,11 @@
 		[
 			[
 				"content",
-				"content_object"
+				"content_type"
+			],
+			[
+				"Comment",
+				"CommentForm"
 			],
 			[
 				"Htt",
@@ -279,14 +283,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/miblog2/urls.py",
-			"settings":
-			{
-				"buffer_size": 1124,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -312,18 +308,22 @@
 	},
 	"file_history":
 	[
+		"/C/Users/karli/Desktop/miblog2/src/posts/utils.py",
+		"/C/Users/karli/Desktop/miblog2/src/posts/views.py",
+		"/C/Users/karli/Desktop/miblog2/src/templates/post_detail.html",
+		"/C/Users/karli/Desktop/miblog2/src/templates/comment_hilo.html",
 		"/C/Users/karli/Desktop/miblog2/src/comments/models.py",
 		"/C/Users/karli/Desktop/miblog2/src/comments/views.py",
-		"/C/Users/karli/Desktop/miblog2/src/miblog2/urls.py",
+		"/C/Users/karli/Desktop/miblog2/src/posts/models.py",
 		"/C/Users/karli/Desktop/miblog2/src/comments/urls.py",
+		"/C/Users/karli/Desktop/miblog2/src/miblog2/urls.py",
+		"/C/Users/karli/Desktop/miblog2/src/posts/admin.py",
+		"/C/Users/karli/Desktop/miblog2/src/posts/urls.py",
 		"/C/Users/karli/Desktop/miblog2/src/templates/comment_thread.html",
-		"/C/Users/karli/Desktop/miblog2/src/templates/post_detail.html",
 		"/C/Users/karli/Desktop/miblog2/src/templates/base.html",
-		"/C/Users/karli/Desktop/miblog2/src/posts/views.py",
 		"/C/Users/karli/Desktop/miblog2/src/static/css/base.css",
 		"/C/Users/karli/Desktop/miblog2/src/templates/post_form.html",
 		"/C/Users/karli/Desktop/miblog2/src/templates/post_list.html",
-		"/C/Users/karli/Desktop/miblog2/src/posts/models.py",
 		"/C/Users/karli/Desktop/miblog2/src/templates/messages_display.html",
 		"/C/Users/karli/Desktop/miblog2/src/miblog2/settings.py",
 		"/C/Users/karli/Desktop/miblog2/src/comments/forms.py",
@@ -331,7 +331,6 @@
 		"/C/Users/karli/Desktop/miblog2/src/comments/admin.py",
 		"/C/Users/karli/Desktop/miblog2/src/posts/forms.py",
 		"/C/Users/karli/Desktop/miblog2/README.md",
-		"/C/Users/karli/Desktop/miblog2/src/posts/urls.py",
 		"/C/Users/karli/Desktop/miblog2/src/manage.py",
 		"/C/Users/karli/Desktop/miblog2/src/miblog2/wsgi.py",
 		"/C/Users/karli/Desktop/test/src/manage.py",
@@ -436,10 +435,7 @@
 		"/C/Users/Karlita/Desktop/get-pip.py",
 		"/C/Users/Karlita/Desktop/cbvs/src/plantillas/lista.html",
 		"/C/Users/Karlita/Desktop/cbvs/src/plantillas/detail.html",
-		"/C/Users/Karlita/Desktop/cbvs/src/myapp/forms.py",
-		"/C/Users/Karlita/Desktop/cbvs/src/plantillas/base.html",
-		"/C/Users/Karlita/Desktop/cbvs/src/cbvs/settings.py",
-		"/C/Users/Karlita/Desktop/cbvs/src/myapp/admin.py"
+		"/C/Users/Karlita/Desktop/cbvs/src/myapp/forms.py"
 	],
 	"find":
 	{
@@ -495,37 +491,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/miblog2/urls.py",
-					"settings":
-					{
-						"buffer_size": 1124,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								820,
-								820
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -593,6 +560,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 322.0,
+	"side_bar_width": 170.0,
 	"status_bar_visible": true
 }
