@@ -18,6 +18,7 @@ from django.utils import timezone
 
 from .forms import PostForm
 from .models import Post
+from .utils import get_read_time
 
 from comments.models import Comment 
 from comments.forms import CommentForm
