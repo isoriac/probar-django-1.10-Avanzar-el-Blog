@@ -7,6 +7,18 @@ from .forms import CommentForm
 from .models import Comment
 
 # Create your views here.
+def comment_delete(request, id):
+	obj = get_object_or_404(Comment, id=id)
+	if request.method == "POST":
+		url_obj_padre = obj.content_object.get_absolute_url()
+		obj.delete()
+		messages.success(request, "Ha sido borrado correctamente")
+		return HttpResponseRedirect(url_obj_padre)
+	context = {
+		"object": obj,
+	}
+	return render(request, "confirm_delete.html", context)
+
 def comment_hilo(request, id):
 	obj = get_object_or_404(Comment, id=id)
 	initial_data = {
