@@ -22,6 +22,9 @@
 	{% endif %}
 <h1>{{ titulo }}  <small>{% if instance.draft %} <span style='color:red;'>DRAFT</span> {% endif %}
 {{ instance.publish }}</small></h1><br>
+	
+	<p>Tiempo de lectura: {% if instance.read_time < 5 %}< 5 minutos {% else %}{{ instance.read_time }} minutos{% endif %}</p>
+
 	{% if instance.user.get_full_name %}
 	<p>Autor: {{ instance.user.get_full_name }}</p>
 	{% else %}
