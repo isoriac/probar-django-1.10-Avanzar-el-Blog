@@ -36,6 +36,9 @@ class Comment(models.Model):
 	def get_absolute_url(self):
 		return reverse("comments:hilo", kwargs={"id": self.id})
 
+	def get_delete_url(self):
+		return reverse("comments:delete", kwargs={"id": self.id})
+
 	def __unicode__(self):
 		return str(self.user.username)
 
