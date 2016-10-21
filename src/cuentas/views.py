@@ -15,10 +15,14 @@ def login_view(request):
 	if form.is_valid():
 		usuario = form.cleaned_data.get("usuario")
 		password = form.cleaned_data.get("password")
+		user = authenticate(username=usuario, password=password)
+		login(request, user)
+		#redirect
 	return render(request, "form.html", {"form": form, "titulo": titulo})
 
 def register_view(request):
 	return render(request, "form.html", {})
 
 def logout_view(request):
+	logout(request)
 	return render(request, "form.html", {})

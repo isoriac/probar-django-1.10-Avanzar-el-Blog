@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"User",
+				"UserLoginForm"
+			],
+			[
+				"login",
+				"login_view"
+			],
+			[
 				"Http",
 				"HttpResponse"
 			],
@@ -292,27 +300,19 @@
 	"buffers":
 	[
 		{
-			"file": "src/comments/views.py",
+			"file": "src/cuentas/views.py",
 			"settings":
 			{
-				"buffer_size": 1751,
+				"buffer_size": 589,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/templates/comment_hilo.html",
+			"file": "src/cuentas/forms.py",
 			"settings":
 			{
-				"buffer_size": 993,
+				"buffer_size": 793,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/comments/models.py",
-			"settings":
-			{
-				"buffer_size": 1579,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -340,20 +340,23 @@
 	},
 	"file_history":
 	[
-		"/C/Users/karli/Desktop/miblog2/src/templates/confirm_delete.html",
+		"/C/Users/karli/Desktop/miblog2/src/templates/form.html",
+		"/C/Users/karli/Desktop/miblog2/src/miblog2/urls.py",
+		"/C/Users/karli/Desktop/miblog2/src/cuentas/views.py",
+		"/C/Users/karli/Desktop/miblog2/src/cuentas/forms.py",
 		"/C/Users/karli/Desktop/miblog2/src/comments/urls.py",
 		"/C/Users/karli/Desktop/miblog2/src/comments/models.py",
 		"/C/Users/karli/Desktop/miblog2/src/templates/comment_hilo.html",
-		"/C/Users/karli/Desktop/miblog2/src/templates/post_detail.html",
 		"/C/Users/karli/Desktop/miblog2/src/comments/views.py",
-		"/C/Users/karli/Desktop/miblog2/src/posts/utils.py",
+		"/C/Users/karli/Desktop/miblog2/src/templates/confirm_delete.html",
+		"/C/Users/karli/Desktop/miblog2/src/templates/base.html",
 		"/C/Users/karli/Desktop/miblog2/src/posts/models.py",
+		"/C/Users/karli/Desktop/miblog2/src/templates/post_detail.html",
+		"/C/Users/karli/Desktop/miblog2/src/posts/utils.py",
 		"/C/Users/karli/Desktop/miblog2/src/posts/views.py",
-		"/C/Users/karli/Desktop/miblog2/src/miblog2/urls.py",
 		"/C/Users/karli/Desktop/miblog2/src/posts/admin.py",
 		"/C/Users/karli/Desktop/miblog2/src/posts/urls.py",
 		"/C/Users/karli/Desktop/miblog2/src/templates/comment_thread.html",
-		"/C/Users/karli/Desktop/miblog2/src/templates/base.html",
 		"/C/Users/karli/Desktop/miblog2/src/static/css/base.css",
 		"/C/Users/karli/Desktop/miblog2/src/templates/post_form.html",
 		"/C/Users/karli/Desktop/miblog2/src/templates/post_list.html",
@@ -464,10 +467,7 @@
 		"/C/Users/Karlita/Desktop/django projects/testcbv/src/myapp/models.py",
 		"/C/Users/Karlita/Desktop/django projects/testcbv/src/plantillas/myapp/listacompra_detail.html",
 		"/C/Users/Karlita/Desktop/cbvs/src/myapp/views.py",
-		"/C/Users/Karlita/Desktop/cbvs/.gitignore",
-		"/C/Users/Karlita/Desktop/get-pip.py",
-		"/C/Users/Karlita/Desktop/cbvs/src/plantillas/lista.html",
-		"/C/Users/Karlita/Desktop/cbvs/src/plantillas/detail.html"
+		"/C/Users/Karlita/Desktop/cbvs/.gitignore"
 	],
 	"find":
 	{
@@ -523,29 +523,28 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/comments/views.py",
+					"file": "src/cuentas/views.py",
 					"settings":
 					{
-						"buffer_size": 1751,
+						"buffer_size": 589,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								724,
-								724
+								80,
+								80
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -555,54 +554,26 @@
 				},
 				{
 					"buffer": 1,
-					"file": "src/templates/comment_hilo.html",
+					"file": "src/cuentas/forms.py",
 					"settings":
 					{
-						"buffer_size": 993,
+						"buffer_size": 793,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								992,
-								992
+								98,
+								98
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/comments/models.py",
-					"settings":
-					{
-						"buffer_size": 1579,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1286,
-								1286
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 60.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -674,6 +645,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 168.0,
+	"side_bar_width": 199.0,
 	"status_bar_visible": true
 }
