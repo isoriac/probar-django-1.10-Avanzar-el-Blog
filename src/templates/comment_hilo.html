@@ -21,12 +21,16 @@
 			<footer>por {{ child_comment.user }} | hace {{ child_comment.timestamp|timesince }} | {% if request.user == comment.user %}<a href='{{ child_comment.get_delete_url }}'>Borrar</a>{% endif %}</footer>
 		</blockquote>
 		{% endfor %}
-
+<hr/>
+{% if request.user.is_authenticated %}
 		<form method="POST" action='.'>{% csrf_token %}
 			{{ form|crispy }}
 			<input type='hidden' name='parent_id' value='{{ comment.id }}'/>
 			<input type='submit' value='Responder' class='btn btn-default' />
 		</form>
+{% else %}
+<p><strong>Hay que iniciar sesión para dejar un comentario</strong></p>
+{% endif %}
 	</div>
 
 <hr/> 		

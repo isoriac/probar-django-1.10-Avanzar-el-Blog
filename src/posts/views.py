@@ -30,7 +30,7 @@ def post_create(request):
 	if not request.user.is_authenticated():
 		raise Http404
 	form = PostForm(request.POST or None, request.FILES or None)
-	if form.is_valid():
+	if form.is_valid() and request.user.is_authenticated():
 		instance = form.save(commit=False)
 		instance.user = request.user 
 		instance.save()

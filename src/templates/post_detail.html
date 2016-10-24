@@ -48,12 +48,14 @@
 
 <div>
 <p class='lead'>Comentarios</p>
-
+{% if request.user.is_authenticated %}
 <form method="POST" action='.'>{% csrf_token %}
 	{{ comment_form|crispy }}
 	<input type='submit' value='Publicar' class='btn btn-default' />
 </form>
-
+{% else %}
+<p><strong>Hay que iniciar sesión para dejar un comentario</strong></p>
+{% endif %}
 <br/>
 
 {% for comment in comments %}
@@ -68,11 +70,15 @@
 		</blockquote>
 		{% endfor %}
 
+{% if request.user.is_authenticated %}
 		<form method="POST" action='.'>{% csrf_token %}
 			{{ comment_form|crispy }}
 			<input type='hidden' name='parent_id' value='{{ comment.id }}'/>
 			<input type='submit' value='Responder' class='btn btn-default' />
 		</form>
+{% else %}
+<p><strong>Hay que iniciar sesión para dejar un comentario</strong></p>
+{% endif %}
 	</div>
 </blockquote>
 <hr/> 		
