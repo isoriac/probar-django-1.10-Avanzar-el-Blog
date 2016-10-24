@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"user",
+				"user_qs2"
+			],
+			[
+				"user_",
+				"user_qs2"
+			],
+			[
 				"User",
 				"UserLoginForm"
 			],
@@ -78,10 +86,6 @@
 			[
 				"html",
 				"html_view"
-			],
-			[
-				"user",
-				"user_nombre"
 			],
 			[
 				"News",
@@ -300,18 +304,34 @@
 	"buffers":
 	[
 		{
+			"file": "src/cuentas/forms.py",
+			"settings":
+			{
+				"buffer_size": 974,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "src/cuentas/views.py",
 			"settings":
 			{
-				"buffer_size": 589,
+				"buffer_size": 700,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/cuentas/forms.py",
+			"file": "src/miblog2/urls.py",
 			"settings":
 			{
-				"buffer_size": 793,
+				"buffer_size": 1359,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/templates/form.html",
+			"settings":
+			{
+				"buffer_size": 394,
 				"line_ending": "Windows"
 			}
 		}
@@ -340,6 +360,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/karli/Desktop/miblog2/src/templates/post_list.html",
 		"/C/Users/karli/Desktop/miblog2/src/templates/form.html",
 		"/C/Users/karli/Desktop/miblog2/src/miblog2/urls.py",
 		"/C/Users/karli/Desktop/miblog2/src/cuentas/views.py",
@@ -359,7 +380,6 @@
 		"/C/Users/karli/Desktop/miblog2/src/templates/comment_thread.html",
 		"/C/Users/karli/Desktop/miblog2/src/static/css/base.css",
 		"/C/Users/karli/Desktop/miblog2/src/templates/post_form.html",
-		"/C/Users/karli/Desktop/miblog2/src/templates/post_list.html",
 		"/C/Users/karli/Desktop/miblog2/src/templates/messages_display.html",
 		"/C/Users/karli/Desktop/miblog2/src/miblog2/settings.py",
 		"/C/Users/karli/Desktop/miblog2/src/comments/forms.py",
@@ -523,57 +543,113 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/cuentas/views.py",
+					"file": "src/cuentas/forms.py",
 					"settings":
 					{
-						"buffer_size": 589,
+						"buffer_size": 974,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								80,
-								80
+								110,
+								110
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 114.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/cuentas/forms.py",
+					"file": "src/cuentas/views.py",
 					"settings":
 					{
-						"buffer_size": 793,
+						"buffer_size": 700,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								98,
-								98
+								659,
+								659
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 60.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/miblog2/urls.py",
+					"settings":
+					{
+						"buffer_size": 1359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1123,
+								1123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 228.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/templates/form.html",
+					"settings":
+					{
+						"buffer_size": 394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								394,
+								394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -645,6 +721,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 199.0,
+	"side_bar_width": 206.0,
 	"status_bar_visible": true
 }
