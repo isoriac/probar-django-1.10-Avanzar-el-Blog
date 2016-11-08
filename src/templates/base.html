@@ -45,6 +45,7 @@
 
 <ol class='breadcrumb'>
   <li><a href='{% url "posts:list" %}'>Inicio-Posts</a></li>
+  <li><a href='{% url "posts:create" %}'>Nuevo Post</a></li>
   {% if not request.user.is_authenticated %}
   <li class='pull-right'><a href='{% url "register" %}'>Registrarse</a></li>
   <li class='pull-right'><a href='{% url "login" %}'>Login</a></li>

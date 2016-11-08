@@ -12,7 +12,7 @@ from django.contrib import messages
 from django.contrib.contenttypes.models import ContentType
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
-from django.http import HttpResponse, HttpResponseRedirect, Http404
+from django.http import HttpResponse, HttpResponseRedirect, Http404, HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 
@@ -28,7 +28,9 @@ from .utils import get_read_time
 # Create your views here.
 def post_create(request):
 	if not request.user.is_authenticated():
-		raise Http404
+		response = HttpResponse("No tienes permiso para hacer eso.")
+		response.status_code = 403
+		return response
 	form = PostForm(request.POST or None, request.FILES or None)
 	if form.is_valid() and request.user.is_authenticated():
 		instance = form.save(commit=False)
@@ -103,7 +105,7 @@ def post_list(request):
 			Q(user__first_name__icontains=query)|
 			Q(user__last_name__icontains=query)
 			).distinct()
-	paginator = Paginator(queryset_list, 3) # Show 25 contacts per page
+	paginator = Paginator(queryset_list, 2) # Show 25 contacts per page
 	page_request_var = "list"
 	page = request.GET.get(page_request_var)
 	try:
@@ -116,7 +118,7 @@ def post_list(request):
 		queryset = paginator.page(paginator.num_pages)
 
 	context = {
-	"titulo": "List",
+	"titulo": "MI BLOG SUPERMEGACHULO",
 	"object_list": queryset,
 	"page_request_var": page_request_var,
 	"hoy": hoy,
